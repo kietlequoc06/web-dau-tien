@@ -1,3 +1,5 @@
 document.getElementById("btn").addEventListener("click", () => {
-  alert("Bạn vừa bấm nút! Chúc bạn học vui 😄");
+  const now = new Date();
+  const time = now.toLocaleTimeString("vi-VN");
+  alert(`Bạn vừa bấm nút lúc ${time}! Chúc bạn học vui 😄`);
 });

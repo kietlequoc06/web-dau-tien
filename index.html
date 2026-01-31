@@ -1,10 +1,19 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Trang web đầu tiên</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
 <body>
-  <header>
+  <header class="card">
     <h1>Xin chào! Mình là Kiệt Quốc</h1>
     <p>Đây là trang web đầu tiên của mình. Mình đang học HTML/CSS/JS.</p>
   </header>
 
-  <section>
+  <section class="card">
     <h2>Thông tin cơ bản</h2>
     <ul>
       <li>
@@ -21,19 +30,31 @@
     </ul>
   </section>
 
-  <section>
+  <section class="card">
     <h2>Hình ảnh</h2>
     <div class="gallery">
-      <img src="images/Kiet.jpg" alt="Ảnh đại diện của Kiệt" />
-      <img src="images/FPT.jpg" alt="Ảnh trường FPT" />
+      <figure>
+        <img src="images/Kiet.jpg" alt="Ảnh đại diện của Kiệt" />
+        <figcaption>Ảnh hoạt động</figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/FPT.jpg" alt="Ảnh trường FPT" />
+        <figcaption>Trường FPT</figcaption>
+      </figure>
     </div>
   </section>
 
-  <section>
+  <section class="card">
     <h2>Tương tác</h2>
     <p>Bấm nút bên dưới để thử JavaScript:</p>
     <button id="btn">Bấm thử</button>
   </section>
 
+  <footer class="footer">
+    <small>© 2026 • Trang web đầu tiên của Kiệt Quốc</small>
+  </footer>
+
   <script src="script.js"></script>
 </body>
+</html>
